@@ -13,11 +13,6 @@ RUN \
         g++ \
     --no-cache
 
-RUN \
-    set -xe ;\
-    gem install \
-        jekyll
-
 WORKDIR /opt/app
 EXPOSE 4000
 
