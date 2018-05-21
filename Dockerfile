@@ -18,15 +18,6 @@ RUN \
     gem install \
         jekyll
 
-RUN \
-    set -xe ;\
-    apk add \
-        python2 \
-    --no-cache ;\
-    python2 -m ensurepip ;\
-    pip install --upgrade pip ;\
-    pip install Pygments
-
 WORKDIR /opt/app
 EXPOSE 4000
 
